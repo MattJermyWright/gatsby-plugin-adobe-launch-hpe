@@ -1,11 +1,4 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://hpe-com.github.io/implementation/img/hpe-logo-small.png" width="400" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Adobe Launch Plugin
-</h1>
+# Gatsby Adobe Launch Plugin
 
 A Gatsby plugin to simplify adding HPE analytics to your site.
 

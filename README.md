@@ -45,6 +45,7 @@ module.exports = {
         events: {
           onRouteUpdate: "ANALYTICS.PAGEVIEW" // Custom event used for page views in Launch
         },
+        enableDuplicateRouteSupression: true, // If the same page view happens more than 2 seconds apart, supress the 2nd
         digitalDataDefaults: {
           // Use to set window.digitalData object on page
           // See https://www.w3.org/2013/12/ceddl-201312.pdf
@@ -53,6 +54,11 @@ module.exports = {
             breadCrumbs: [] // Used to build the page name
           }}
         },
+        linkEventSelectors: {
+          "submit-button": ["button[type=submit]", function() {
+            // Link tracking code goes here
+          }]
+        }
       }
     },
     // other gatsby plugins
